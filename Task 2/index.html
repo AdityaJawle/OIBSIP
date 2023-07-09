@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="img1.png">
+            <h3 class="name">Aditya Jawle</h3>
+            <p class="post">Front End Developer</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="home" id="home">
+        <h1>Hi There !</h1>
+        <h3>I'm <span>Aditya Jawle</span></h3>
+        <p>I am an enthusiastic, responsible and hardworking
+            person having a good knowledge about
+            programming, developing, testing, debugging
+            interfaces, looking forward for a strong foundation
+            in software engineering and programming principle.
+            My aim is to contribute to the objective of the
+            organization and to grow with it. Having an
+            experience in the fields of competition l can be sure
+            of my commitments towards the company which
+            will endeavour farmost in achieving goals.
+            </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+    </section>
+    
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> me</h1>
+        <div class="row">
+            <div class="info">
+                <h3><span> name : </span> Aditya Jawle </h3>
+                <h3><span> age : </span> 21 </h3>
+                <h3><span> qualification : </span> H.S.C </h3>
+                <h3><span> post : </span> front end developer </h3>
+                <h3><span> language : </span> English , Hindi </h3>
+                <div id="editor"></div>
+                <a href="#"><button class="btn" onclick="window.open('cv.pdf')">download CV <i class="fas fa-download"></i></button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h1 class="heading"> my <span>education</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2017</span>
+                <h3>S.S.C</h3>
+                <p>Twins English High School</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2019</span>
+                <h3>H.S.C</h3>
+                <p>M.J Science College</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Currently Pursuing</span>
+                <h3>B.Tech</h3>
+                <p>Viva Institue of Technology</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1 class="heading"> my <span>skills</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span>HTML CSS</span>
+                <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></h3>
+            </div>
+            <div class="box">
+                <span>MySQL</span>
+                <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></h3>
+            </div>
+            <div class="box">
+                <span>C++</span>
+                <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> me </h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3><i class="fas fa-envelope"></i>jawleaditya8@gmail.com</h3>
+                    <h3><i class="fas fa-phone"></i>8268613197</h3>
+                    <h3><i class="fas fa-phone"></i>8779650424</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i>mumbai,INDIA</h3>
+                </div>
+            </div>
+
+            <form action="">
+                <input type="text" placeholder="full name" class="box">
+                <input type="email" placeholder="your email" class="box">
+                <input type="text" placeholder="your subject" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your reason"></textarea>
+                <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+</body>
+</html>

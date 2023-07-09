@@ -1,0 +1,268 @@
+:root{
+    --gradient:linear-gradient(90deg, #13e9d7, #13ceaf);
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border: none; outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: #13e9d7;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+
+section{
+    min-height: 100vh;
+    padding:1rem 7%;
+    padding: top 6rem;;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    color: #fff;
+    background:var(--gradient);
+    border-radius: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top:-1rem; left:-100%;
+    background: #fff9;
+    height: 150%;
+    width: 20%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+.btn:hover::before{
+    transition: .2s linear;
+    left: 120%;
+}
+.heading{
+    color: #444;
+    font-size: 5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    padding: 1.5rem 7%;
+    background:var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+header .logo{
+    color: #fff;
+    font-size: 2.5rem;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+ header .navbar ul li{
+     margin:0 1rem;
+}
+
+ header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .navbar ul li a:hover{
+    color: #444;
+}
+
+
+
+header #menu{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background:url(../home.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 6rem;
+    color: #666;
+}
+    
+.home p{
+    font-size: 1.9rem;
+    color:( beige);
+    padding:1rem 0;
+    width: 70rem;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .image{
+    flex: 1 1 40rem;
+}
+
+.about .image img{
+    height: 65vh;
+    width: 100%;
+}
+
+.about .content{
+    flex: 1 1 40rem;
+}
+
+.about .content h3{
+    font-size: 3.5rem;
+    color: #666;
+}
+
+.about .content h3 p{
+    font-size: 35rem;
+    color: #666;
+    padding:1rem 0;
+}
+
+#toa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10rem;
+}
+
+
+#toa h1{
+    font-size: 5rem;
+    color: #666;
+}
+
+#toa h1 p{
+    font-size: 45rem;
+    color: #666;
+    padding:1rem 0;
+}
+
+
+.contact{
+    background: #111;
+}
+
+.contact .heading{
+    color: #fff;
+}
+
+.contact .row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row form{
+    flex:1 1 50rem;
+    background: #222;
+    padding:2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    align-items: flex-start;
+}
+
+.contact .row form .box{
+    height: auto;
+    width:49%;
+    border:.1rem solid #eee;
+    padding:0 1rem;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    color: #fff;
+    background:none;
+    text-transform: none;
+}
+
+.contact .row form .box:focus{
+    border-color: #13e9d7;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .address{
+    height:15rem;
+    padding:1rem;
+    resize: none;
+    width:100%;
+}
+
+.contact .row form .btn:hover{
+    background: #fff;
+    color: #333;
+}
+
+
+.footer .credit{
+    padding:2rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background: #111;
+    text-align: center;
+    font-weight: normal;
+}
+.footer .credit a{
+    color: #13e9d7;
+}
+
+
